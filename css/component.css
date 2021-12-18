@@ -820,14 +820,14 @@
 .form textarea{
     padding: 8px 16px;
     display: inline-block;
-    border: 1px solid #cdcdcd;
+    border: 1px solid black;
     border-radius: 4px;
     vertical-align: middle;
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 16px;
     background-color: inherit;
-    color: #fefefe;
+    color: black;
 }
 .form textarea{
     resize: none;
@@ -843,7 +843,7 @@
     margin-bottom: 8px;
     display: inline-block;
     vertical-align: middle;
-    color: #fefefe;
+    color: black;
 }
 .form__btn-group{
     margin-top: 32px;
