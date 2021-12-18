@@ -614,11 +614,11 @@
 ---------------------------*/
 .experience{
     padding-top: 160px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 @media(max-width: 768px){
     .experience{
-        padding-top: 100px;
+        padding-top: 160px;
         padding-bottom: 40px;
     }
 }
@@ -695,13 +695,16 @@
 /*-------------------------*/
 /* $Work
 ---------------------------*/
-.work{
-    padding-top: 80px;
-    padding-bottom: 120px;
+.work {
+    padding-bottom: 80px;
+}
+.work h2{
+    padding-top: 160px;
+    padding-bottom: 80px;
 }
 @media (max-width: 768px){
-    .work{
-        padding-top: 40px;
+    .work h2{
+        padding-top: 160px;
         padding-bottom: 80px;
     }
 }
