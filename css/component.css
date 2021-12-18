@@ -172,22 +172,7 @@
     text-align: center;
 }
 
-/* icon btn */
-.icon-btn{
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 24px;
-}
-.icon-btn .icon{
-    display: block;
-    text-align: center;
-    transition: all 0.3s;
-}
-.icon-btn .icon:hover{
-    transform: translateY(-20%);
-}
+
 /* text btn */
 .text-btn{
     display: inline-block;
@@ -278,14 +263,16 @@
 }
 /* navbar 
 ---------------------*/
-.navbar{
+.social-bar img{
+    display: inline-block;
+    height: 52px;
 }
 .navbar--collapse{
     margin-right: -16px;
     margin-left: -16px;
 }
 .navbar__social-bar{
-    padding: 24px;
+    padding: 12px;
     float: left;
 }
 @media (max-width: 768px){
@@ -380,20 +367,34 @@
     display: block;
     text-align: center;
     font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 900;
     color: #484848;
-    line-height: 80px;
+    line-height: 48px;
     transition: all 0.3s;
 }
 @media (max-width: 768px){
     .popup-menu__item{
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .popup-menu__mi{
+        font-size: 22px;
         line-height: 48px;
     }
 }
 .popup-menu__item:hover{
     color: #f8ad57;
+}
+.popup-menu__mi{
+    display: block;
+    text-align: center;
+    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: #f8ad57;
+    line-height: 60px;
+
 }
 /*-------------------------*/
 /* $About
@@ -409,13 +410,13 @@
     }
 }
 .hero__heading{
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 500;
     color: #fefefe;
 }
 @media (max-width: 768px){
     .hero__heading{
-        font-size: 48px;
+        font-size: 24px;
     }
 }
 .hero__bg{
@@ -479,7 +480,9 @@
     line-height: 40px;
     margin-bottom: 24px;
 }
-.quote__name span{
+.quote__name {
+    font-size: 28px;
+    font-weight: 600;
     color: #f8ad57;
 }
 /*-------------------------*/
@@ -502,6 +505,10 @@
 .skill-card{
     padding-left: 32px;
     margin-bottom: 32px;
+    transition: all 0.5s;
+}
+.skill-card:hover{
+    transform: translate(-9px,-9px);
 }
 .skill-card__inner{
     background-color: #fefefe;
@@ -556,6 +563,32 @@
         padding-bottom: 0;
     }
 }
+
+.img-box{
+    position: relative;
+}
+.img-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    background-color: #f8ad57;;
+    font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 8px 12px 8px 12px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.img-text a{
+    color: white;
+}
+.img-box:hover .img-text{
+    opacity: 1;
+}
+    
 /*-------------------------*/
 /* $Experience
 ---------------------------*/
@@ -802,6 +835,7 @@
 .footer{
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color:#f8ad57;
 }
 .final-text{
     text-align: center;
