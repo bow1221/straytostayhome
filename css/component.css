@@ -35,7 +35,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../images/urban-long-exposure-night.jpg");
+    background-image: url("../images/homepageimage.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -46,8 +46,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(60deg,#4e4f95,#c87db4);
-    opacity: 0.6;
+    background: linear-gradient(180deg,#000000,#e969c700);
+    opacity: 0.4;
 }
 /* lean-bg
 ---------------------*/
@@ -124,20 +124,20 @@
     color: #fefefe;
 }
 .btn.btn--primary{
-    background-color: #e881a7;
+    background-color: #f8ad57;
 }
 .btn.btn--primary:hover,
 .btn.btn--primary:active{
-    background-color: #dd6488;
+    background-color: #d48d3c;
 }
 .btn.btn--secondary{
     background-color: inherit;
-    border: 1px solid #e881a7;
-    color: #e881a7;
+    border: 1px solid #f8ad57;
+    color: #f8ad57;
 }
 .btn.btn--secondary:hover,
 .btn.btn--secondary:active{
-    background-color: #e881a7;
+    background-color: #f8ad57;
     color: #fefefe;
 }
 .btn.btn--lg{
@@ -203,7 +203,7 @@
     color: #484848;
 }
 .text-btn.text-btn--primary{
-    color: #e881a7;
+    color: #f8ad57;
 }
 .text-btn.text-btn--lg{
     font-size: 20px;
@@ -218,7 +218,7 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #e881a7;
+    background-color: #f8ad57;
     transition: all 0.3s;
 }
 .text-btn.text-btn--lg:hover:before{
@@ -271,10 +271,10 @@
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 .header--colored .menu-toggle span{
-    background-color: #e881a7;
+    background-color: #f8ad57;
 }
 .header--colored .navbar__social-bar .icon-btn{
-    color: #e881a7;
+    color: #f8ad57;
 }
 /* navbar 
 ---------------------*/
@@ -316,7 +316,7 @@
     display: block;
     height: 2px;
     width: 32px;
-    background-color: #fefefe;
+    background-color: #f8ad57;
     margin-bottom: 8px;
     transition: all 0.3s;
 }
@@ -365,7 +365,7 @@
 .popup-menu__close span{
     width: 32px;
     height: 2px;
-    background-color: #e881a7;
+    background-color: #f8ad57;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -393,7 +393,7 @@
     }
 }
 .popup-menu__item:hover{
-    color: #e881a7;
+    color: #f8ad57;
 }
 /*-------------------------*/
 /* $About
@@ -423,7 +423,6 @@
     top: 80px;
     width: 100%;
     height: 100%;
-    background-image: url("../images/homepageimage.jpg");
     background-size: 1200px;
     background-repeat: no-repeat;
     background-position: top right;
@@ -465,7 +464,7 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: #e881a7;
+    background-color: #f8ad57;
     text-align: center;
     line-height: 64px;
     font-size: 32px;
@@ -481,7 +480,7 @@
     margin-bottom: 24px;
 }
 .quote__name span{
-    color: #e881a7;
+    color: #f8ad57;
 }
 /*-------------------------*/
 /* $Skill
@@ -512,7 +511,7 @@
     padding-left: 48px;
 }
 .skill-card__title{
-    color: #e881a7;
+    color: #f8ad57;
     font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
     margin-top: 0;
     margin-bottom: 8px;
@@ -581,7 +580,7 @@
 .timeline{
     width: 4px;
     height: 100%;
-    background-color: #e881a7;
+    background-color: #f8ad57;
     position: absolute;
     top: 0;
     left: 50%;
@@ -609,7 +608,7 @@
     height: 16px;
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-    background-color: #e881a7;
+    background-color: #f8ad57;
     position: absolute;
     top: 50%;
 }
@@ -748,7 +747,7 @@
 .form input[type="email"]:focus,
 .form textarea:focus{
     outline: 0;
-    border: 1px solid #e881a7;
+    border: 1px solid #f8ad57;
 }
 .form label{
     margin-bottom: 8px;
@@ -780,7 +779,7 @@
     margin-bottom: 16px;
 }
 .info__email a{
-    color: #e881a7;
+    color: #f8ad57;
     font-size: 18px;
     font-weight: 400;
 }
@@ -793,7 +792,7 @@
     font-weight: 400;
 }
 .info__social-bar .icon-btn{
-    color: #e881a7;
+    color: #f8ad57;
 }
 
 
