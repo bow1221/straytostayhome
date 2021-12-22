@@ -189,6 +189,23 @@
 .btnshop:hover{
     background-color: rgb(172, 172, 172);
 }
+.btntest{
+    display:block;
+    width: 100%;
+    padding: 16px;
+    min-width: 64px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #f8ad57;
+    border-radius: 18px;
+}
+.btntest:hover{
+    background-color: #cc8c44;
+}
 .thisknow{
     display:block;
     width: 100%;
@@ -532,14 +549,27 @@
     max-width: 60%;
     max-height: 60%;
 }
+.testp{
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+}
 @media (max-width: 768px){
     .hero__bg{
         background-size: 760px;
+    }
+    .testp{
+        font-size: 36px;
     }
 }
 @media (max-width: 480px){
     .hero__bg{
         background-size: 500px;
+    }
+    
+    .testp{
+        font-size: 24px;
     }
 }
 
@@ -916,7 +946,6 @@
 .form__btn-group{
     margin-top: 32px;
 }
-
 /* divide-text
 ---------------------*/
 .divide-text{
@@ -927,7 +956,9 @@
     line-height: 32px;
     color: #fefefe;
 }
-
+.contantbo{
+    padding-top: 40px;
+}
 /* info
 ---------------------*/
 .info{
