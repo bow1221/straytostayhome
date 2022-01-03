@@ -682,6 +682,7 @@
     transform: translateY(-50%);
     background-color: #f8ad57;
 }
+
 .skill-card__icon .image{
     position: absolute;
     top: 50%;
@@ -690,12 +691,23 @@
     max-width: 60%;
     max-height: 60%;
 }
+
+.skill-card__icon .imageadopt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 63px;
+    max-height: 17px;
+}
+
 @media (max-width: 768px){
     .skill-card__icon{
         top: 0;
         left: 50%;
         transform: translate(-50%,-50%);
     }
+    
     .skill-card{
         padding: 0;
         margin-top: 48px;
