@@ -697,8 +697,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 63px;
-    max-height: 17px;
+    max-width: 50px;
+    max-height: 40px;
 }
 
 @media (max-width: 768px){
