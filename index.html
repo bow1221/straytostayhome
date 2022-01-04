@@ -15,7 +15,30 @@
 	<div class="wrapper">
 
 		<!-- Start bg -->
-		<div class="bg"></div>
+		<div class="bg">
+			<div class="" >
+				<img class="mySlides" src="images/catknow (1).jpeg" style="width:100%">
+				<img class="mySlides" src="images/dogknow (1).jpg" style="width:100%">
+				<img class="mySlides" src="images/mouseknow (1).jpg" style="width:100%">
+			  </div>
+			  
+			  <script>
+			  var myIndex = 0;
+			  carousel();
+			  
+			  function carousel() {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  myIndex++;
+				  if (myIndex > x.length) {myIndex = 1}    
+				  x[myIndex-1].style.display = "block";  
+				  setTimeout(carousel, 2000); // Change image every 2 seconds
+			  }
+			  </script>
+		</div>
 		<!-- End bg -->
 
 		<!-- Strat header -->
@@ -73,9 +96,8 @@
 
 			<!-- Start about -->
 			<div id="about" class="hero">
-				<div class="hero__bg"></div>
 				<div class="container">
-					<div class="hero__content wow bounceInLeft">
+					<div class="hero__content ">
 						<h2 class="hero__heading">讓每一個浪浪都有家，
 							<br>全國每年有270萬個浪浪安樂死...</h2>
 						<a href="#" class="btn btn--primary btn--md">了解更多</a>
