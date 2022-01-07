@@ -78,52 +78,10 @@
 					<h2 class="subtitle u-text-center color-white wow bounceInUp">領養流程</h2>
 					<div class="timeline-group">
 						<div class="timeline"></div>
-						<div class="timeline-cards">
+						<div v-for="item in adopsys" class="timeline-cards"id="adopsys">
 							<div class="timeline-cards__row">
 								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">民眾可至各區公立動物之家、或上動物保護防疫處官方網站尋找欲認養之動物</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">認養人資格：須年滿20歲攜帶身份證件且無動物保護法規禁止認養動物之條件者</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">認養人需填寫認養表</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">向認養人宣導飼主責任</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">認養動物免費植入晶片、辦理寵物登記及施打狂犬病疫苗</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">認養手續完成，帶著心愛的毛寶貝一起回家</p>
-								</div>
-							</div>
-							<div class="timeline-cards__row">
-								<div class="timeline-card wow bounceInUp">
-									<p class="timeline-card__text">注意事項：<br>
-
-										(1)幼犬或幼貓認養植入晶片、辦理寵物登記，施打疫苗，惟因幼犬或幼貓年幼，狂犬病疫苗會通知飼主擇期回來施打。對於認養逾3個月尚未施打狂犬病疫苗之動物，動保處會追蹤提醒飼主。<br>
-										
-										(2)為了鼓勵以認養代替購買，凡從新北市各公立動物之家認養之動物，除可免費辦理寵物登記及享有絕育補助外，並可獲得寵物白金卡，以享有以下優惠：<br>
-										
-										終身免費狂犬病疫苗注射。<br>
-										
-										免費一次內、外寄生蟲及心絲蟲預防投藥。<br>
-										
-										免費一次犬貓基礎疫苗。<br>
-										
-										認養半年內檢診醫療服務及公務獸醫電話諮詢。</p>
+									<p class="timeline-card__text">{{item.adoptp}}</p>
 								</div>
 							</div>
 						</div>
@@ -151,5 +109,22 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script>
+		var adopsys = new Vue({
+			el:"#adopsys",
+			data:{
+				adopsys:[
+					{adoptp:"民眾可至各區公立動物之家、或上動物保護防疫處官方網站尋找欲認養之動物" },
+					{adoptp:"認養人資格：須年滿20歲攜帶身份證件且無動物保護法規禁止認養動物之條件者"},
+					{adoptp:"認養人需填寫認養表"},
+					{adoptp:"向認養人宣導飼主責任"},
+					{adoptp:"認養動物免費植入晶片、辦理寵物登記及施打狂犬病疫苗"},
+					{adoptp:"認養手續完成，帶著心愛的毛寶貝一起回家"},
+					{adoptp:"注意事項：(1)幼犬或幼貓認養植入晶片、辦理寵物登記，施打疫苗，惟因幼犬或幼貓年幼，狂犬病疫苗會通知飼主擇期回來施打。對於認養逾3個月尚未施打狂犬病疫苗之動物，動保處會追蹤提醒飼主。(2)為了鼓勵以認養代替購買，凡從新北市各公立動物之家認養之動物，除可免費辦理寵物登記及享有絕育補助外，並可獲得寵物白金卡，以享有以下優惠：終身免費狂犬病疫苗注射。免費一次內、外寄生蟲及心絲蟲預防投藥。免費一次犬貓基礎疫苗。認養半年內檢診醫療服務及公務獸醫電話諮詢。"}
+				]
+			}
+		})
+	</script>
 </body>
 </html>
