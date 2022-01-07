@@ -79,55 +79,13 @@
 				
 				<h2 class="subtitle u-text-center">寵物用品商品</h2>
 				<div class="container">
-					<div class="skill-group">
+					<div class="skill-group"id="shopweb">
 						<div class="row">
-							<div class="col-sm-4">
+							<div v-for="item in shopweb" class="col-sm-4 shopset">
 								<div class="skill-card-shop">
-									<img class="image" src="images/好物快寵.png">
-									<a href="https://www.quickbuy.com.tw/">
+									<img v-bind:src="item.imgSrc" class="image" alt="">
+									<a :href="item.href">
 										<h4 class="btnshop">來去看看</h4>
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="skill-card-shop2" >
-									<img class="image" src="images/動物星球.jpg">
-									<a href="https://www.animal.com.tw/">
-										    <h4 class="btnshop">來去看看</h4>
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="skill-card-shop" >
-									<img class="image" src="images/毛孩市集.png">
-									<a href="https://petpetgo.com/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0jeVQxwG5x9wyi4Q6HST9e1FdE7njLUUwITYauYIqRv5eqnVs4naNEaAq-HEALw_wcB&ppgclid=59cesf6d0n">
-										    <h4 class="btnshop">來去看看</h4>
-									</a>
-								</div>
-							</div>
-						</div>	
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="skill-card-shop2">
-									<img class="image" src="images/寵五王國.png">
-									<a href="https://www.petkingdom.com.tw/">
-										<h4 class="btnshop">來去看看</h4>
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="skill-card-shop" >
-									<img class="image" src="images/logo_727fa743-f2ac-4b32-8b11-48957c75fedf_300x.png">
-									<a href="https://shop.maoup.com.tw/">
-										<h4 class="btnshop">來去看看</h4>
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="skill-card-shop2" >
-									<img class="image" src="images/官網置頂logo_HAPET好寵.png">
-									<a href="https://www.hapet.com.tw/">
-										 <h4 class="btnshop">來去看看</h4>
 									</a>
 								</div>
 							</div>
@@ -156,5 +114,21 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script>
+		var shopweb = new Vue({
+			el:"#shopweb",
+			data:{
+				shopweb:[
+				{imgSrc:"images/毛孩市集.png",href:"https://petpetgo.com/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0jeVQxwG5x9wyi4Q6HST9e1FdE7njLUUwITYauYIqRv5eqnVs4naNEaAq-HEALw_wcB&ppgclid=59cesf6d0n" },
+					{imgSrc:"images/好物快寵.png",href:"https://www.quickbuy.com.tw/" },
+					{imgSrc:"images/logo_727fa743-f2ac-4b32-8b11-48957c75fedf_300x.png",href:"https://shop.maoup.com.tw/" },
+					{imgSrc:"images/動物星球.jpg",href:"https://www.animal.com.tw/" },
+					{imgSrc:"images/寵五王國.png",href:"https://www.petkingdom.com.tw/" },
+					{imgSrc:"images/官網置頂logo_HAPET好寵.png",href:"https://www.hapet.com.tw/" }
+				]
+			}
+		})
+	</script>
 </body>
 </html>

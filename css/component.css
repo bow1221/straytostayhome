@@ -658,6 +658,10 @@
     padding: 24px;
     margin: 8px;
 }
+.shopset img{
+    width: 100%;
+    height: 150px;
+}
 .skill-card-shop2{
     background-color: #7b6780;
     border-radius: 4px;
