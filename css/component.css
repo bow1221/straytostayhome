@@ -49,11 +49,7 @@
     background-size: cover;
     background-position: center;    
 }
-@media(max-width: 768px){
-    .bgin{
-    padding: 20px;
-}
-}
+
 
 .bgweb{
     position: fixed;
