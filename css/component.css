@@ -931,8 +931,8 @@
     margin-right: auto;
     margin-left: auto;
 }
-.form input[type="text"],
-.form input[type="tel"],
+.form input[type="name"],
+.form input[type="phone"],
 .form input[type="email"],
 .form textarea{
     padding: 8px 16px;
@@ -949,8 +949,8 @@
 .form textarea{
     resize: none;
 }
-.form input[type="text"]:focus,
-.form input[type="tel"]:focus,
+.form input[type="name"]:focus,
+.form input[type="phone"]:focus,
 .form input[type="email"]:focus,
 .form textarea:focus{
     outline: 0;
