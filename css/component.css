@@ -645,6 +645,7 @@
     transform: translate(-9px,-9px);
 }
 .skill-card__inner{
+    height: 250px;
     background-color: #fefefe;
     border-radius: 4px;
     box-shadow: 0 0px 10px rgba(0,0,0,0.2);

@@ -87,97 +87,18 @@
 				<img class="graphic_016" data-stellar-ratio="1.5" src="images/icon/IMG-0399.PNG" alt="">
 				<img class="graphic_006" data-stellar-ratio="1.5" src="images/icon/IMG-0410.PNG" alt="">
 				<div class="container">
-					<div class="skill-group">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="skill-card ">
-									<a href="https://www.animal.taichung.gov.tw/1521490/Lpsimplelist" >
-										<div class="skill-card__inner">
-										    <h4 class="skill-card__title">台中市動物保護防疫處</h4>
-										    <p class="skill-card__text">　　本處以預防家畜傳染病發生與制止蔓延為目標；近年來鑑於本市人口密集，
-												犬貓等家庭寵物飼養數遽增，市民生活水準提昇，對畜產品及動物性蛋白質攝取需求量增加；加強狂犬病
-												等人畜共通傳染病防治及生乳、肉、蛋等畜產品衛生檢驗，已為刻不容緩重要業務。 </p>
-									    </div>
-									    
-									</a>
-									<div class="skill-card__icon">
-										    <img class="imageadopt" src="images/台中市動物保護防疫處.jpg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="skill-card " >
-									<a href="https://www.klaphio.klcg.gov.tw/tw/klaphio/1328.html">
-										<div class="skill-card__inner">
-										<h4 class="skill-card__title">基隆市動物保護防疫所</h4>
-										<p class="skill-card__text">精進推動本市動物保護工作，提升動物福利打造友善寵物城市，以獸醫專業積
-											極推動本市畜禽水產防疫工作，使基隆市成為禽流感、非洲豬瘟、狂犬病等疫病零風險、零疫情縣市，為市
-											民食安把關，創造市民安全生活環境，維護動物健康。</p>
-									</div>
-									</a>
-									<div class="skill-card__icon">
-										<img class="imageadopt" src="images/基隆市動物保護防疫所.jpg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="row">
+					<div class="skill-group" >
+						<div class="row" id="adoptw">
 							<div v-for="item in adoptw" class="col-sm-6">
 								<div class="skill-card " >
 									<a :href="item.href">
 										<div class="skill-card__inner">
 										    <h4 class="skill-card__title">{{item.p01}}</h4>
-										    <p class="skill-card__text">{{item.p01}}</p>
+										    <p class="skill-card__text">{{item.p02}}</p>
 									    </div>
 									</a>
 									 <div class="skill-card__icon">
 										<img v-bind:src="item.webscr" class="imageadopt" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="skill-card " >
-									<a href="http://www.meetpets.org.tw/pets/dog">
-										<div class="skill-card__inner">
-										    <h4 class="skill-card__title">社團法人地圖認養協會</h4>
-										    <p class="skill-card__text">本會的成立宗旨：「提倡、推動人與動物之和諧共存」承蒙各位朋友們的支持與愛護。我們相信，透過您對我們的支持，我們可以持續的推動「人與動物和諧共存」的理念及行動。捐給本協會的款項，由本會統籌分配運用於會務、各項研究發展及推專案推動。 </p>
-									    </div>
-									</a>
-									<div class="skill-card__icon">
-										<img class="imageadopt" src="images/社團法人地圖認養協會.jpg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="skill-card" >
-									<a href="https://langlanglove.com/">
-										<div class="skill-card__inner">
-										<h4 class="skill-card__title">浪浪甘巴爹</h4>
-										<p class="skill-card__text">我們知道幫助流浪動物的辛苦及不捨，所以更想以行動來實踐「以領養代
-											替撲殺」的理念， 「浪浪不要怕，我們一起回家」是平台的核心價值，讓走失在外的寵物們能盡快回
-											到主人的懷抱， 也期待能幫助更多的浪浪找到溫暖的歸宿，讓我們一起為浪浪加油！</p>
-									</div>
-									</a>
-									<div class="skill-card__icon">
-										<img class="imageadopt" src="images/浪浪甘巴爹.jpg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="skill-card wow bounceInUp" >
-									<a href="https://www.packtw.org/adopt?lang=zh&gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0iyAWluJVOu__wMtH2FvIGFqwtqD7ffXjqrRmlmqcWwbHTUBqmupEMaAsDyEALw_wcB">
-										<div class="skill-card__inner">
-										    <h4 class="skill-card__title">Pack</h4>
-										    <p class="skill-card__text">一隻浪犬要從街頭到找到新家的旅程很長，也很不容易。
-												我們在巴克預備學校制定了四階段課程來協助浪犬盡快完成他們的旅程。
-												巴克預備學校的四階段課程內容包含：行為及個性評估、服從訓練、中途家庭社會化。
-												課程能為我們的實習狗狗做好被領養、融入未來家庭的準備，希望能夠提高成功機會！</p>
-									    </div>
-									</a>
-									<div class="skill-card__icon">
-										<img class="imageadopt" src="images/Pack.jpg" alt="">
 									</div>
 								</div>
 							</div>
@@ -214,10 +135,10 @@
 				adoptw:[
 					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
 					{href:"http://www.meetpets.org.tw/pets/dog",p01:"社團法人地圖認養協會",p02:"本會的成立宗旨：「提倡、推動人與動物之和諧共存」承蒙各位朋友們的支持與愛護。我們相信，透過您對我們的支持，我們可以持續的推動「人與動物和諧共存」的理念及行動。捐給本協會的款項，由本會統籌分配運用於會務、各項研究發展及推專案推動。", webscr:"images/社團法人地圖認養協會.jpg"},
-					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
-					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
-					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
-					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"}
+					{href:"https://www.animal.taichung.gov.tw/1521490/Lpsimplelist",p01:"台中市動物保護防疫處",p02:"　　本處以預防家畜傳染病發生與制止蔓延為目標；近年來鑑於本市人口密集，犬貓等家庭寵物飼養數遽增，市民生活水準提昇，對畜產品及動物性蛋白質攝取需求量增加；加強狂犬病等人畜共通傳染病防治及生乳、肉、蛋等畜產品衛生檢驗，已為刻不容緩重要業務。", webscr:"images/台中市動物保護防疫處.jpg"},
+					{href:"https://www.klaphio.klcg.gov.tw/tw/klaphio/1328.html",p01:"基隆市動物保護防疫所",p02:"精進推動本市動物保護工作，提升動物福利打造友善寵物城市，以獸醫專業積極推動本市畜禽水產防疫工作，使基隆市成為禽流感、非洲豬瘟、狂犬病等疫病零風險、零疫情縣市，為市民食安把關，創造市民安全生活環境，維護動物健康。", webscr:"images/基隆市動物保護防疫所.jpg"},
+					{href:"https://langlanglove.com/",p01:"浪浪甘巴爹",p02:"我們知道幫助流浪動物的辛苦及不捨，所以更想以行動來實踐「以領養代替撲殺」的理念， 「浪浪不要怕，我們一起回家」是平台的核心價值，讓走失在外的寵物們能盡快回到主人的懷抱， 也期待能幫助更多的浪浪找到溫暖的歸宿，讓我們一起為浪浪加油！", webscr:"images/浪浪甘巴爹.jpg"},
+					{href:"https://www.packtw.org/adopt?lang=zh&gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0iyAWluJVOu__wMtH2FvIGFqwtqD7ffXjqrRmlmqcWwbHTUBqmupEMaAsDyEALw_wcB",p01:"Pack",p02:"一隻浪犬要從街頭到找到新家的旅程很長，也很不容易。我們在巴克預備學校制定了四階段課程來協助浪犬盡快完成他們的旅程。巴克預備學校的四階段課程內容包含：行為及個性評估、服從訓練、中途家庭社會化。課程能為我們的實習狗狗做好被領養、融入未來家庭的準備，希望能夠提高成功機會！", webscr:"images/Pack.jpg"}
 				]
 			}
 		})
