@@ -122,16 +122,16 @@
 							</div>
 						</div>	
 						<div class="row">
-							<div class="col-sm-6">
+							<div v-for="item in adoptw" class="col-sm-6">
 								<div class="skill-card " >
-									<a href="https://act-adopt.ahiqo.ntpc.gov.tw/">
+									<a :href="item.href">
 										<div class="skill-card__inner">
-										    <h4 class="skill-card__title">台北市動物保護防疫所</h4>
-										    <p class="skill-card__text">台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物</p>
+										    <h4 class="skill-card__title">{{item.p01}}</h4>
+										    <p class="skill-card__text">{{item.p01}}</p>
 									    </div>
 									</a>
 									 <div class="skill-card__icon">
-										<img class="imageadopt" src="images/台北市動物保護防疫所.jpg" alt="">
+										<img v-bind:src="item.webscr" class="imageadopt" alt="">
 									</div>
 								</div>
 							</div>
@@ -140,9 +140,7 @@
 									<a href="http://www.meetpets.org.tw/pets/dog">
 										<div class="skill-card__inner">
 										    <h4 class="skill-card__title">社團法人地圖認養協會</h4>
-										    <p class="skill-card__text">本會的成立宗旨：「提倡、推動人與動物之和諧共存」
-												承蒙各位朋友們的支持與愛護。我們相信，透過您對我們的支持，我們可以持續的推動「人與動物和諧共存」的理念及行動。
-												捐給本協會的款項，由本會統籌分配運用於會務、各項研究發展及推專案推動。 </p>
+										    <p class="skill-card__text">本會的成立宗旨：「提倡、推動人與動物之和諧共存」承蒙各位朋友們的支持與愛護。我們相信，透過您對我們的支持，我們可以持續的推動「人與動物和諧共存」的理念及行動。捐給本協會的款項，由本會統籌分配運用於會務、各項研究發展及推專案推動。 </p>
 									    </div>
 									</a>
 									<div class="skill-card__icon">
@@ -208,5 +206,21 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script>
+		var adoptw = new Vue({
+			el:"#adoptw",
+			data:{
+				adoptw:[
+					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
+					{href:"http://www.meetpets.org.tw/pets/dog",p01:"社團法人地圖認養協會",p02:"本會的成立宗旨：「提倡、推動人與動物之和諧共存」承蒙各位朋友們的支持與愛護。我們相信，透過您對我們的支持，我們可以持續的推動「人與動物和諧共存」的理念及行動。捐給本協會的款項，由本會統籌分配運用於會務、各項研究發展及推專案推動。", webscr:"images/社團法人地圖認養協會.jpg"},
+					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
+					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
+					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"},
+					{href:"https://act-adopt.ahiqo.ntpc.gov.tw/",p01:"台北市動物保護防疫所",p02:"台北市政府的動物保護防疫所，可以在此網頁公告及領養寵物", webscr:"images/台北市動物保護防疫所.jpg"}
+				]
+			}
+		})
+	</script>
 </body>
 </html>
