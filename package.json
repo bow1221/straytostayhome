@@ -1,21 +1,22 @@
 {
-  "name": "straytostayhome",
+  "name": "currybibimbap-master",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bow1221/straytostayhome.git"
+    "url": "git+ssh://git@github.com/peazzz/CurryBibimbap.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bow1221/straytostayhome/issues"
+    "url": "https://github.com/peazzz/CurryBibimbap/issues"
   },
-  "homepage": "https://github.com/bow1221/straytostayhome#readme",
+  "homepage": "https://github.com/peazzz/CurryBibimbap#readme",
   "dependencies": {
     "express": "^4.17.2",
     "nedb-promises": "^5.0.3"
