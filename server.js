@@ -9,12 +9,11 @@ server.use(bodyParser.urlencoded());
 server.use(bodyParser.json());
 
 var DB = require("nedb-promises");
-var Users = DB.create("users.db")
-var Contact = DB.create("contact.db")
+var Users = DB.create("users.db")//引入db
+var Contact = DB.create("contact.db")//
 
 server.get("/portfolio", function(req, res){
     portfolios= [
-       
     ]
    res.send(portfolios);
 })
