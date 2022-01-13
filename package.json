@@ -1,5 +1,5 @@
 {
-  "name": "currybibimbap-master",
+  "name": "straytostayhome",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/peazzz/CurryBibimbap.git"
+    "url": "git+ssh://git@github.com/bow1221/straytostayhome.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/peazzz/CurryBibimbap/issues"
+    "url": "https://github.com/peazzz/straytostayhome/issues"
   },
-  "homepage": "https://github.com/peazzz/CurryBibimbap#readme",
+  "homepage": "https://github.com/peazzz/straytostayhome#readme",
   "dependencies": {
     "express": "^4.17.2",
     "nedb-promises": "^5.0.3"
