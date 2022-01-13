@@ -78,19 +78,19 @@
 					<h2 class="subtitle u-text-center">聯繫我們</h2>
 					<form action="" class="form" action="/contact" method="get" name="sentMessage" novalidate>
 						<label for="">名字</label>
-						<input name="name" type="name">
+						<input name="name" required type="name" id="name">
 						<div class="row">
 							<div class="col-sm-6">
 								<label for="">手機</label>
-								<input name="phone" type="phone">
+								<input name="phone" required type="phone" id="phone">
 							</div>
 							<div class="col-sm-6">
 								<label for="">信箱</label>
-								<input name="email"type=email>
+								<input name="email" required type="email"id="email">
 							</div>
 						</div>
 						<label for="">訊息</label>
-						<textarea name="message" type="message" id="" cols="30" rows="10"></textarea>
+						<textarea name="message" required type="message" id="message" cols="30" rows="10"></textarea>
 						<div class="btn-group btn-group--center form__btn-group">
 							<input type="submit" class="btn btn--primary btn--md" value="Send">
 						</div>
